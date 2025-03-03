@@ -10,7 +10,7 @@ let handler = async (m, { conn, args, participants }) => {
     let emoji = '🏆'; // Puedes cambiarlo por otro emoji que prefieras
 
     // Asegurar que moneda tenga un valor definido
-    let moneda = 'yenes'; // Puedes cambiarlo si usas otra moneda en tu RPG
+    let moneda = 'Dulces'; // Puedes cambiarlo si usas otra moneda en tu RPG
 
     let text = `「${emoji}」Los usuarios con más *¥${moneda}* son:\n\n`;
 
