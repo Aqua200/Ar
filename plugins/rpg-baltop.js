@@ -5,7 +5,13 @@ let handler = async (m, { conn, args, participants }) => {
 
     let sortedLim = users.sort((a, b) => (b.coin || 0) + (b.bank || 0) - (a.coin || 0) - (a.bank || 0));
     let len = args[0] && args[0].length > 0 ? Math.min(10, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedLim.length);
-    
+
+    // Definir un emoji por defecto
+    let emoji = '🏆'; // Puedes cambiarlo por otro emoji que prefieras
+
+    // Asegurar que moneda tenga un valor definido
+    let moneda = 'yenes'; // Puedes cambiarlo si usas otra moneda en tu RPG
+
     let text = `「${emoji}」Los usuarios con más *¥${moneda}* son:\n\n`;
 
     text += sortedLim.slice(0, len).map(({ jid, coin, bank }, i) => {
@@ -26,19 +32,3 @@ handler.fail = null;
 handler.exp = 0;
 
 export default handler;
-
-function sort(property, ascending = true) {
-    if (property) return (...args) => args[ascending & 1][property] - args[!ascending & 1][property];
-    else return (...args) => args[ascending & 1] - args[!ascending & 1];
-}
-
-function toNumber(property, _default = 0) {
-    if (property) return (a, i, b) => {
-        return { ...b[i], [property]: a[property] === undefined ? _default : a[property] };
-    }
-    else return a => a === undefined ? _default : a;
-}
-
-function enumGetKey(a) {
-    return a.jid;
-}
