@@ -9,7 +9,7 @@ let img = catalogo
     forwardedNewsletterMessageInfo: {
       newsletterJid: "120363206717994793@newsletter",
       serverMessageId: 100,
-      newsletterName: 'Sumi - Sakursawa Channel 🎌',
+      newsletterName: '✿:･✧ 𝙷𝚊𝚔𝚊𝚛𝚒-𝙲𝚘𝚖𝚖𝚞𝚗𝚒𝚝𝚢  ✧･:✿',
     },
 	    externalAdReply: {
 				    showAdAttribution: true,
