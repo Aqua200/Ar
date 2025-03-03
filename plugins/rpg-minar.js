@@ -1,27 +1,18 @@
-const cooldowns = {}
-
 let handler = async (m, { conn }) => {
+  let users = Object.entries(global.db.data.users)
+    .filter(([_, user]) => user.limit > 0) // Solo los que tengan dulces
+    .sort((a, b) => b[1].limit - a[1].limit) // Ordenar de mayor a menor
+    .map(([id, user], index) => `*${index + 1}.-* @${id.split('@')[0]} ➤ *${user.limit} 🍬*`)
+    .slice(0, 10) // Top 10
 
-  let amount = Math.floor(Math.random() * 20)
-  const tiempoEspera = 5 * 60 // 5 minutos
-  if (cooldowns[m.sender] && Date.now() - cooldowns[m.sender] < tiempoEspera * 1000) {
-    const tiempoRestante = segundosAHMS(Math.ceil((cooldowns[m.sender] + tiempoEspera * 1000 - Date.now()) / 1000))
-    m.reply(`🕜 Espera *${tiempoRestante}* para volver a Minar.`)
-    return
-  }
+  if (!users.length) return m.reply('⚠️ Nadie ha minado todavía.')
 
-  global.db.data.users[m.sender].limit += amount
-  await m.reply(`Genial! minaste *${amount} 🍬 Dulces*`)
-  cooldowns[m.sender] = Date.now()
+  let mensaje = `🏆 *Clasificación de Minería* 🏆\n\n${users.join('\n')}\n\n¡Sigue minando para estar en el top!`
+  m.reply(mensaje, null, { mentions: users.map(u => u.split(' ')[1].replace('@', '') + '@s.whatsapp.net') })
 }
-handler.help = ['minar']
+
+handler.help = ['baltop']
 handler.tags = ['rpg']
-handler.command = ['minar', 'miming', 'mine'] 
-handler.register = true 
-export default handler
+handler.command = ['baltop', 'minetop'] 
 
-function segundosAHMS(segundos) {
-  const minutos = Math.floor((segundos % 3600) / 60)
-  const segundosRestantes = segundos % 60
-  return `${minutos} minutos y ${segundosRestantes} segundos`
-}
+export default handler
