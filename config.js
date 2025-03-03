@@ -10,11 +10,11 @@ import moment from 'moment-timezone'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.owner = [
-  ['51923300039', 'Danịel 🇦🇱⁩', true],
-  ['5491122461521'],
-  ['524434703586'],
-  ['51955918117'],
-  ['5491122461521']
+  ['5216631079388', '🜲 Propietario 🜲⁩', true],
+  [''],
+  [''],
+  [''],
+  ['']
 ]
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -25,12 +25,12 @@ global.prems = []
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.packname = ``
-global.author = '{\n "bot": {\n   "name": "Sumi - Sakurasawa",\n     "author": "Danịel",\n   "status_bot": "active"\n }\n}'
-global.wait = '🐢 *Sumi Sakurasawa*'
-global.botname = 'Sumi - Sakurasawa'
-global.textbot = `Powered By Starlights Team`
+global.author = '{\n "bot": {\n   "name": "❝꒰ 𝙷𝚊𝚔𝚊𝚛𝚒-𝙱𝚘𝚝 🍧ˎˊ˗",\n     "author": "𝙽𝚎𝚢𝚔𝚘𝚘𝚛💜",\n   "status_bot": "active"\n }\n}'
+global.wait = '*❝꒰ 𝙷𝚊𝚔𝚊𝚛𝚒-𝙱𝚘𝚝 🍧ˎˊ˗*'
+global.botname = '❝꒰ 𝙷𝚊𝚔𝚊𝚛𝚒-𝙱𝚘𝚝 🍧ˎˊ˗'
+global.textbot = `𝙼𝚊𝚍𝚎 𝚋𝚢 𝚒𝚊𝚖 𝙽𝚎𝚢𝚔𝚘𝚘𝚛💜`
 global.listo = '*🍭 Aqui tiene*'
-global.namechannel = '【 ✯ Starlights Team - Oficial Chanel ✰ 】'
+global.namechannel = '❝꒰ 𝙷𝚊𝚔𝚊𝚛𝚒-𝙱𝚘𝚝 🍧ˎˊ˗ • 𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 𝙽𝚎𝚢𝚔𝚘𝚘𝚛💜'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -39,8 +39,8 @@ global.miniurl = fs.readFileSync('./storage/img/miniurl.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.group = 'https://chat.whatsapp.com/J1R402WH1N0Hdl3S0NDEYu'
-global.canal = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
+global.group = 'https://chat.whatsapp.com/KGdftYYFrbVBzTpZE73LBI'
+global.canal = 'https://whatsapp.com/channel/0029VazHywx0rGiUAYluYB24'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
